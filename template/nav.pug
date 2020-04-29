@@ -1,0 +1,20 @@
+nav
+  ul
+    li
+      a(href='') Food Delivery Now
+    li
+      a(href='') How it Works
+    li
+      a.cities-btn(href='#cities') Our Cities
+    if user
+      li
+        a(href="/me").img-parent 
+          img(src="img/customer-1.jpg", alt="", srcset="").img_profile
+          //- span #{user.Name}
+      li
+        a(href="#").logout LogOut
+    else
+      li 
+        a(href="/signup") SignUp
+      li 
+        a(href="/login") Login
